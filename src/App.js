@@ -1,8 +1,8 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaEnvelope, FaArrowRight } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaBars, FaTimes,FaArrowRight } from 'react-icons/fa';
 
+// Images
 import HRManagementImage from './images/hr-management.png';
 import ECommerceImage from './images/ecommerce.png';
 import SchoolManagementImage from './images/school-management.png';
@@ -23,121 +23,74 @@ import RH from './images/RH.jpeg';
 import Moi from './images/moi.jpeg';
 
 const projects = [
-  {
-    title: 'HR Management App',
-    description: 'A Laravel-based application for managing employees, roles, and permissions.',
-    image: RH,
-  },
-  {
-    title: 'eCommerce Website',
-    description: 'A MERN stack eCommerce platform for an online clothing store.',
-    image: ECommerceImage,
-  },
-  {
-    title: 'School Management App',
-    description: 'A Laravel-based application for managing school attestations.',
-    image: SchoolManagementImage,
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'A React-based portfolio website with animations and dark mode.',
-    image: Me,
-  },
-  {
-    title: 'Trading template for adBlueMedia locker ADS',
-    description: 'A full-stack task management application built with Node.js and React.',
-    image: T,
-  },
-  {
-    title: 'CASHPLUS money service extention',
-    description: 'A dynamic blog platform with user authentication and content management.',
-    image: CASHPLUS,
-  },
+  { title: 'HR Management App', description: 'A Laravel-based application for managing employees, roles, and permissions.', image: RH },
+  { title: 'eCommerce Website', description: 'A MERN stack eCommerce platform for an online clothing store.', image: ECommerceImage },
+  { title: 'School Management App', description: 'A Laravel-based application for managing school attestations.', image: SchoolManagementImage },
+  { title: 'Portfolio Website', description: 'A React-based portfolio website with animations and dark mode.', image: Me },
+  { title: 'Trading Template for AdBlueMedia Locker ADS', description: 'A full-stack task management application built with Node.js and React.', image: T },
+  { title: 'CASHPLUS Money Service Extension', description: 'A dynamic blog platform with user authentication and content management.', image: CASHPLUS }
 ];
+
 const App = () => {
   const [showMore, setShowMore] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white font-sans">
+      
       {/* Navigation */}
       <nav className="p-6 bg-gray-800 bg-opacity-50 fixed w-full z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-2xl font-bold"
-          >
+          <motion.h1 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-2xl font-bold">
             Aymane Essaid
           </motion.h1>
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex space-x-4"
-          >
-            <a href="#about" className="hover:text-purple-400 transition-colors">About</a>
-            <a href="#technologies" className="hover:text-purple-400 transition-colors">Technologies</a>
-            <a href="#experience" className="hover:text-purple-400 transition-colors">Experience</a>
-            <a href="#projects" className="hover:text-purple-400 transition-colors">Projects</a>
-            <a href="#contact" className="hover:text-purple-400 transition-colors">Contact</a>
-          </motion.div>
+          <div className="flex items-center">
+            <button onClick={toggleNav} className="md:hidden p-2 text-white">
+              {isNavOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+            <motion.div 
+              initial={{ opacity: 0, y: -20 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.5, delay: 0.2 }} 
+              className={`md:flex space-x-4 ${isNavOpen ? 'block' : 'hidden'} md:block`}
+            >
+              <a href="#about" className="hover:text-purple-400 transition-colors">About</a>
+              <a href="#technologies" className="hover:text-purple-400 transition-colors">Technologies</a>
+              <a href="#experience" className="hover:text-purple-400 transition-colors">Experience</a>
+              <a href="#projects" className="hover:text-purple-400 transition-colors">Projects</a>
+              <a href="#contact" className="hover:text-purple-400 transition-colors">Contact</a>
+            </motion.div>
+          </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-screen">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center"
-        >
-          {/* Wide and Large Profile Image */}
-          <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg overflow-hidden mx-auto">
-            <img
-              src={Me}
-              alt="Aymane Essaid"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <h1 className="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-            Full-Stack & Mobile Developer
-          </h1>
-          <p className="text-xl text-gray-400">
-            Passionate about building modern web and mobile applications.
-          </p>
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            className="mt-8 flex space-x-4"
-          >
-            <a
-              href="https://www.linkedin.com/in/aymane-essaid-39347b228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-5 p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors"
-            >
-              <FaLinkedin size={24} />
-            </a>
-            <a
-              href="https://github.com/AymanE200227"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors"
-            >
-              <FaGithub size={24} />
-            </a>
-            <a
-              href="mailto:aymane.essaid.job@gmail.com"
-              className="p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors"
-            >
-              <FaEnvelope size={24} />
-            </a>
-            
-          </motion.div>
-        </motion.div>
-      </section>
+      <section className="flex flex-col items-center justify-center h-screen px-4">
+  <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="text-center">
+    <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-lg overflow-hidden mx-auto">
+      <img src={Me} alt="Aymane Essaid" className="w-full h-full object-cover" />
+    </div>
+    <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+      Full-Stack & Mobile Developer
+    </h1>
+    <p className="text-lg md:text-xl text-gray-400">Passionate about building modern web and mobile applications.</p>
+    <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.8 }} className="mt-8 flex space-x-4">
+      <a href="https://www.linkedin.com/in/aymane-essaid" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors">
+        <FaLinkedin size={24} />
+      </a>
+      <a href="https://github.com/AymanE200227" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors">
+        <FaGithub size={24} />
+      </a>
+      <a href="mailto:aymane.essaid.job@gmail.com" className="p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors">
+        <FaEnvelope size={24} />
+      </a>
+    </motion.div>
+  </motion.div>
+</section>
 
       {/* About Section */}
       <section id="about" className="py-20">
