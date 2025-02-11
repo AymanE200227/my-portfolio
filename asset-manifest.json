@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.dd9e2b78.css",
+    "main.js": "/my-portfolio/static/js/main.252f803c.js",
+    "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/Trading.png": "/my-portfolio/static/media/Trading.9dc24b78f4ed9a9030bc.png",
+    "static/media/hr-management.png": "/my-portfolio/static/media/hr-management.9dc24b78f4ed9a9030bc.png",
+    "static/media/ecommerce.png": "/my-portfolio/static/media/ecommerce.04cde036e8664a8d4ff3.png",
+    "static/media/mee.png": "/my-portfolio/static/media/mee.93674f39bf786bd993bf.png",
+    "static/media/CASHPLUS.png": "/my-portfolio/static/media/CASHPLUS.d3d6f22d6fefc5954801.png",
+    "static/media/moi.jpeg": "/my-portfolio/static/media/moi.f0538eb47a5b5af7b03e.jpeg",
+    "static/media/RH.jpeg": "/my-portfolio/static/media/RH.ad971b034617e662fe82.jpeg",
+    "static/media/react.png": "/my-portfolio/static/media/react.97301e8b73c16a5d93c6.png",
+    "static/media/tailwindcss.png": "/my-portfolio/static/media/tailwindcss.76c6bfd0831c3896d850.png",
+    "static/media/laravel.png": "/my-portfolio/static/media/laravel.d5de08870359cb2f528d.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.dd9e2b78.css.map": "/my-portfolio/static/css/main.dd9e2b78.css.map",
+    "main.252f803c.js.map": "/my-portfolio/static/js/main.252f803c.js.map",
+    "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd9e2b78.css",
+    "static/js/main.252f803c.js"
+  ]
+}
