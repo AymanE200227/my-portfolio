@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.dd9e2b78.css",
-    "main.js": "/my-portfolio/static/js/main.252f803c.js",
+    "main.js": "/my-portfolio/static/js/main.7a3c3ebc.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/Trading.png": "/my-portfolio/static/media/Trading.9dc24b78f4ed9a9030bc.png",
     "static/media/hr-management.png": "/my-portfolio/static/media/hr-management.9dc24b78f4ed9a9030bc.png",
@@ -15,11 +15,11 @@
     "static/media/laravel.png": "/my-portfolio/static/media/laravel.d5de08870359cb2f528d.png",
     "index.html": "/my-portfolio/index.html",
     "main.dd9e2b78.css.map": "/my-portfolio/static/css/main.dd9e2b78.css.map",
-    "main.252f803c.js.map": "/my-portfolio/static/js/main.252f803c.js.map",
+    "main.7a3c3ebc.js.map": "/my-portfolio/static/js/main.7a3c3ebc.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd9e2b78.css",
-    "static/js/main.252f803c.js"
+    "static/js/main.7a3c3ebc.js"
   ]
 }
