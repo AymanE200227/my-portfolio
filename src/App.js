@@ -20,13 +20,14 @@ import Bootstrap from './images/bootstrap.png';
 import CASHPLUS from './images/CASHPLUS.png';
 import T from './images/Trading.png';
 import RH from './images/RH.jpeg';
-import Moi from './images/moi.jpeg';
+import M from './images/moi.jpeg';
+import Moi from './images/Ayman.png';
 
 const projects = [
   { title: 'HR Management App', description: 'A Laravel-based application for managing employees, roles, and permissions.', image: RH },
   { title: 'eCommerce Website', description: 'A MERN stack eCommerce platform for an online clothing store.', image: ECommerceImage },
   { title: 'School Management App', description: 'A Laravel-based application for managing school attestations.', image: SchoolManagementImage },
-  { title: 'Portfolio Website', description: 'A React-based portfolio website with animations and dark mode.', image: Me },
+  { title: 'Portfolio Website', description: 'A React-based portfolio website with animations and dark mode.', image: Moi },
   { title: 'Trading Template for AdBlueMedia Locker ADS', description: 'A full-stack task management application built with Node.js and React.', image: T },
   { title: 'CASHPLUS Money Service Extension', description: 'A dynamic blog platform with user authentication and content management.', image: CASHPLUS }
 ];
@@ -72,7 +73,7 @@ const App = () => {
       <section className="flex flex-col items-center justify-center h-screen px-4">
   <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="text-center">
     <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-lg overflow-hidden mx-auto">
-      <img src={Me} alt="Aymane Essaid" className="w-full h-full object-cover" />
+      <img src={Moi} alt="Aymane Essaid" className="w-full h-full object-cover rounded-lg" />
     </div>
     <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
       Full-Stack & Mobile Developer
