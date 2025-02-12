@@ -21,7 +21,7 @@ import CASHPLUS from './images/CASHPLUS.png';
 import T from './images/Trading.png';
 import RH from './images/RH.jpeg';
 import M from './images/moi.jpeg';
-import Moi from './images/AY.png';
+import Moi from './images/ayman.png';
 
 const projects = [
   { title: 'HR Management App', description: 'A Laravel-based application for managing employees, roles, and permissions.', image: RH },
