@@ -21,7 +21,7 @@ import CASHPLUS from './images/CASHPLUS.png';
 import T from './images/Trading.png';
 import RH from './images/RH.jpeg';
 import M from './images/moi.jpeg';
-import Moi from './images/ayman.png';
+import Moi from './images/ayman.jpeg';
 
 const projects = [
   { title: 'HR Management App', description: 'A Laravel-based application for managing employees, roles, and permissions.', image: RH },
@@ -70,9 +70,9 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-screen px-4">
+      <section className="flex flex-col items-center justify-center h-screen px-2">
   <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="text-center">
-    <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-lg overflow-hidden mx-auto">
+    <div className="w-60 h-80  rounded-lg mx-auto">
       <img src={Moi} alt="Aymane Essaid" className="w-full h-full object-cover rounded-lg" />
     </div>
     <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
