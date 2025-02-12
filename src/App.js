@@ -89,6 +89,13 @@ const App = () => {
       <a href="mailto:aymane.essaid.job@gmail.com" className="p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors">
         <FaEnvelope size={24} />
       </a>
+      <a
+        href="/CV-ayman-essaid.pdf" // Path to your CV file in the public folder
+        download="Aymane_Essaid_CV.pdf" // Name of the downloaded file
+        className="p-2 bg-gray-700 rounded-full hover:bg-purple-600 transition-colors"
+      >
+        <span className="text-sm">Download CV</span>
+      </a>
     </motion.div>
   </motion.div>
 </section>
